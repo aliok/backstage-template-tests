@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: 01-external-src-files
+  description: Foo bar
+spec:
+  targets:
+    - ./template01.yaml

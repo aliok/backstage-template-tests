@@ -69,7 +69,7 @@ spec:
       name: Generating the Source Code Component
       action: fetch:template
       input:
-        url: https://github.com/aliok/software-templates/tree/f311729d2a51766c115001f8a18b3f3c324abedd/templates/github/knative-func-node-http/skeleton
+        url: ./skeleton
         values:
           orgName: ${{ parameters.orgName }}
           repoName: ${{ parameters.repoName }}
@@ -89,7 +89,7 @@ spec:
       name: Generating the Catalog Info Component
       action: fetch:template
       input:
-        url: https://github.com/aliok/software-templates/blob/f311729d2a51766c115001f8a18b3f3c324abedd/skeletons/catalog-info/catalog-info.yaml
+        url: ../../../skeletons/catalog-info/
         values:
           orgName: ${{ parameters.orgName }}
           repoName: ${{ parameters.repoName }}
